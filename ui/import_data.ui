@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ImportData</class>
+ <widget class="QDialog" name="ImportData">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>804</width>
+    <height>353</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QPlainTextEdit" name="txt_data">
+     <property name="styleSheet">
+      <string notr="true">QScrollBar:horizontal {
+    height: 12px;
+}
+
+QScrollBar:vertical {
+    width: 12px;
+}</string>
+     </property>
+     <property name="placeholderText">
+      <string>Nhập ds data, mỗi data 1 dòng</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btn_save">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	color: #fff;
+	background-color: #0d6efd;
+	border: 1px solid #0d6efd;
+	border-radius: 2px;
+	cursor: pointer;
+}
+QPushButton:hover{
+	background-color: #0b5ed7;
+	border: 1px solid #0b5ed7;
+}
+
+QPushButton:pressed {	
+	padding-left: 2px;
+	padding-top: 2px;
+}
+
+QPushButton:disabled{
+	background-color: rgb(12, 101, 227);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Lưu</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
